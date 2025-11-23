@@ -470,7 +470,7 @@ for i, row in df_summary.iterrows():
 df_flows.to_excel(writer, sheet_name="Export_Flujos", index=False)
 
 # Save workbook
-writer.save()
+writer.close()
 
 # -----------------------------
 # 7) GENERAR CSVs Y ZIP
